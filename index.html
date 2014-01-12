@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Quick Templater by jurrick</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Quick Templater</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/jurrick/quick-templater">View the Project on GitHub <small>jurrick/quick-templater</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/jurrick/quick-templater/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/jurrick/quick-templater/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/jurrick/quick-templater">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="quick-templater" class="anchor" href="#quick-templater"><span class="octicon octicon-link"></span></a>Quick Templater</h1>
+
+<p>Quick Templater is a rails generator that you can use to generate site templates quickly.
+Today some bootstrap v3 templates already available to generate layouts.</p>
+
+<p><a href="http://badge.fury.io/rb/quick-templater"><img src="https://badge.fury.io/rb/quick-templater.png" alt="Gem Version"></a>
+<a href="https://travis-ci.org/jurrick/quick-templater"><img src="https://travis-ci.org/jurrick/quick-templater.png?branch=master" alt="Build Status"></a></p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add this line to your application's Gemfile:</p>
+
+<pre><code>gem 'quick-templater'
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre><code>$ gem install quick-templater
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h3>
+<a name="layout-generator" class="anchor" href="#layout-generator"><span class="octicon octicon-link"></span></a>Layout generator</h3>
+
+<p>Used without parameters, it generates the layout inside the application.html.erb file using the bootstrap template "Starter".</p>
+
+<pre><code>rails g quick_templater:layout
+</code></pre>
+
+<p>You can specify the layout file name in the first parameter:</p>
+
+<pre><code>rails g quick_templater:layout admin # it will generate a layout called `admin.html.erb`
+</code></pre>
+
+<p>If you want to use another bootstrap template layout (See a <a href="https://github.com/jurrick/quick-templater/wiki/List-templates">list of all templates</a>), instead of the default, you can use the <code>--template</code> option:</p>
+
+<pre><code>rails g quick_templater:layout admin --template="jumbotron"
+</code></pre>
+
+<p>You can specify the template engine with <code>--engine=name</code> option, where name can be erb (default), haml or slim:</p>
+
+<pre><code>rails g quick_templater:layout --engine=slim # you must specify slim in your Gemfile
+</code></pre>
+
+<p>You can specify the text used in the header with the <code>--app-name</code> option:</p>
+
+<pre><code>rails g quick_templater:layout --app-name="My New Application"
+</code></pre>
+
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it ( <a href="http://github.com/jurrick/quick-templater/fork">http://github.com/jurrick/quick-templater/fork</a> )</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/jurrick">jurrick</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
