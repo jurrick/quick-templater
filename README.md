@@ -5,6 +5,7 @@ Today some bootstrap v3 templates already available to generate layouts.
 
 [![Gem Version](https://badge.fury.io/rb/quick-templater.png)](http://badge.fury.io/rb/quick-templater)
 [![Build Status](https://travis-ci.org/jurrick/quick-templater.png?branch=master)](https://travis-ci.org/jurrick/quick-templater)
+[![Coverage Status](https://coveralls.io/repos/jurrick/quick-templater/badge.png)](https://coveralls.io/r/jurrick/quick-templater)
 [![Dependency Status](https://gemnasium.com/jurrick/quick-templater.png)](https://gemnasium.com/jurrick/quick-templater)
 
 
