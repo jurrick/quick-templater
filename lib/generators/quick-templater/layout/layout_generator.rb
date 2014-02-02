@@ -31,7 +31,6 @@ module QuickTemplater
     protected
 
     def generate_haml_layout(layout)
-      require 'haml'
       require 'html2haml'
       Dir.mktmpdir('quick-templater-haml') do |haml_root|
         tmp_html_path = "#{haml_root}/#{layout}"
@@ -46,7 +45,6 @@ module QuickTemplater
     end
 
     def generate_slim_layout(layout)
-      require 'slim'
       require 'html2haml'
       require 'haml2slim'
       Dir.mktmpdir('quick-templater-slim') do |slim_root|

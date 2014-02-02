@@ -4,7 +4,7 @@ require "generator_spec/test_case"
 
 require "generators/quick-templater/layout/layout_generator"
 
-describe QuickTemplater::Layout do
+describe QuickTemplater::LayoutGenerator do
   include GeneratorSpec::TestCase
   destination File.expand_path('../../tmp', __FILE__)
 
