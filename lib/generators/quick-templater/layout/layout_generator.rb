@@ -1,5 +1,7 @@
+require 'rails/generators'
+
 module QuickTemplater
-  class Layout < Rails::Generators::Base
+  class LayoutGenerator < Rails::Generators::Base
     desc "Installs the application layout"
     source_root File.expand_path('../templates/bootstrap3', __FILE__)
 
